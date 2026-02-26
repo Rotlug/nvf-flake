@@ -25,6 +25,7 @@
       css.enable = true;
       toml.enable = true;
       tailwind.enable = true;
+      lua.enable = true;
     };
 
     # Extra languages/linters not supported in nvf yet
