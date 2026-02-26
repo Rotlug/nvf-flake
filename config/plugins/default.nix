@@ -3,5 +3,6 @@
     ./snacks.nix
     ./mini.nix
     ./blink.nix
+    ./git.nix
   ];
 }
