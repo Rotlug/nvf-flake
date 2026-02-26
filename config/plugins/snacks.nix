@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   config.vim = {
     utility.snacks-nvim = {
       enable = true;
@@ -16,6 +16,11 @@
         };
       };
     };
+
+    extraPackages = with pkgs; [
+      fd
+      ripgrep
+    ];
 
     keymaps = [
       {
