@@ -31,5 +31,7 @@
       registers = "unnamedplus";
       providers.wl-copy.enable = true;
     };
+
+    luaConfigPost = builtins.readFile ../after.lua;
   };
 }
