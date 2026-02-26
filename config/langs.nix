@@ -12,7 +12,7 @@
         # Clippy
         lsp.opts = ''
           ["rust-analyzer"] = {
-            checkOnSave = {
+            check = {
               command = "clippy",
               extraArgs = { "--", "-D", "clippy::pedantic" },
             },
