@@ -14,6 +14,7 @@
           scope.min_size = 2;
           animate.enabled = false;
         };
+        input.enabled = true;
       };
     };
 
