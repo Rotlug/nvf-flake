@@ -36,6 +36,6 @@
       providers.wl-copy.enable = true;
     };
 
-    luaConfigPost = builtins.readFile ../after.lua;
+    luaConfigPost = builtins.readFile ../lua/after.lua;
   };
 }
