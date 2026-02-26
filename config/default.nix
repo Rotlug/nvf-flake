@@ -15,6 +15,7 @@
 
     lsp = {
       enable = true;
+      lspconfig.enable = true;
       trouble.enable = true;
       formatOnSave = true;
     };
