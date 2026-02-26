@@ -23,6 +23,10 @@
     binds.whichKey.enable = true;
 
     options = {
+      smartindent = true;
+      autoindent = true;
+      tabstop = 2;
+      softtabstop = 2;
       shiftwidth = 2;
     };
 
