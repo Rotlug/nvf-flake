@@ -22,6 +22,7 @@
 
       ts.enable = true;
       html.enable = true;
+      python.enable = true;
       css.enable = true;
       toml.enable = true;
       tailwind.enable = true;
