@@ -31,7 +31,10 @@
 
     # Extra languages/linters not supported in nvf yet
     lsp.lspconfig.sources = {
-      eslint = "lspconfig.eslint.setup({})";
+      eslint = ''
+        vim.lsp.config("eslint", {})
+        vim.lsp.enable("eslint")
+      '';
     };
 
     extraPackages = with pkgs; [
