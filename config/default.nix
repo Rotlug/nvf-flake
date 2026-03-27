@@ -36,6 +36,8 @@
       providers.wl-copy.enable = true;
     };
 
+    visuals.fidget-nvim.enable = true;
+
     luaConfigPost = builtins.readFile ../lua/after.lua;
   };
 }
