@@ -13,6 +13,10 @@
                 "**/.git/*"
               ];
             };
+            grep = {
+              ignored = false;
+              hidden = false;
+            };
           };
           hidden = true;
           ignored = true;
