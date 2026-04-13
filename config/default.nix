@@ -2,15 +2,11 @@
   imports = [
     ./keymaps.nix
     ./langs.nix
+    ./theme.nix
     ./plugins
   ];
 
   config.vim = {
-    theme = {
-      enable = true;
-      name = "mellow";
-    };
-
     vimAlias = true;
 
     lsp = {
