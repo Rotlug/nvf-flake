@@ -3,13 +3,21 @@
     languages = {
       enableFormat = true;
       enableTreesitter = true;
-
       nix.enable = true;
+      ts.enable = true;
+      html.enable = true;
+      css.enable = true;
+      toml.enable = true;
+      tailwind.enable = true;
+      lua.enable = true;
 
+      python = {
+        enable = true;
+        format.type = ["ruff"];
+      };
       rust = {
         enable = true;
         format.enable = true;
-        # Clippy
         lsp.opts = ''
           ["rust-analyzer"] = {
             check = {
@@ -19,19 +27,7 @@
           }
         '';
       };
-
-      ts.enable = true;
-      html.enable = true;
-
-      python = {
-        enable = true;
-        format.type = ["ruff"];
-      };
-
-      css.enable = true;
-      toml.enable = true;
-      tailwind.enable = true;
-      lua.enable = true;
+      clang.enable = true;
     };
 
     # Extra languages/linters not supported in nvf yet
@@ -44,6 +40,7 @@
 
     extraPackages = with pkgs; [
       clippy
+      clang-tools
       vscode-langservers-extracted
     ];
   };
