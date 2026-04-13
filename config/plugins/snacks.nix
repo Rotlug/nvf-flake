@@ -3,12 +3,27 @@
     utility.snacks-nvim = {
       enable = true;
       setupOpts = {
-        picker.enabled = true;
+        picker = {
+          enabled = true;
+          sources = {
+            files = {
+              hidden = true;
+              ignored = false;
+              exclude = [
+                "**/.git/*"
+              ];
+            };
+          };
+          hidden = true;
+          ignored = true;
+        };
+
         explorer = {
           enabled = true;
           trash = true;
           replace_netrw = true;
         };
+
         dim = {
           enabled = true;
           scope.min_size = 2;
