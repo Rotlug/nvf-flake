@@ -20,7 +20,7 @@ let
 in {
   config.vim.theme = {
     enable = true;
-    name = "base16";
+    name = "mini-base16";
     base16-colors = colors;
   };
 }
