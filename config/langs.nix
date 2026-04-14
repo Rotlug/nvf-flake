@@ -3,6 +3,7 @@
     languages = {
       enableFormat = true;
       enableTreesitter = true;
+
       nix.enable = true;
       ts.enable = true;
       html.enable = true;
@@ -10,7 +11,10 @@
       toml.enable = true;
       tailwind.enable = true;
       lua.enable = true;
+      clang.enable = true;
+      cmake.enable = true;
 
+      # Languages with extra config options
       python = {
         enable = true;
         format.type = ["ruff"];
@@ -27,7 +31,6 @@
           }
         '';
       };
-      clang.enable = true;
     };
 
     # Extra languages/linters not supported in nvf yet
